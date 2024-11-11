@@ -42,7 +42,7 @@
 
   - name: deamon reload and start
     ansible.builtin.systemd_service:
-      deamon-reload: true
+      daemon_reload: true
 
   - name: copy mongodb repo
     ansible.builtin.copy:
