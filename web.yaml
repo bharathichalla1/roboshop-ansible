@@ -9,13 +9,13 @@
 
   - name: remove html directory
     ansible.builtin.file:
-    path: /user/share/nginx/html 
-    state: absent
+      path: /user/share/nginx/html 
+      state: absent
 
   - name: create html directory
     ansible.builtin.file:
-     path: /user/share/nginx/html 
-    state: directory
+      path: /user/share/nginx/html 
+      state: directory
 
   - name: download web app
     ansible.builtin.get_url:
